@@ -1,6 +1,6 @@
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 html, body {
     width: 100%;
@@ -9,6 +9,11 @@ html, body {
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
   background: rgb(175, 103, 233);
   background: linear-gradient(
     180deg,
@@ -17,10 +22,70 @@ body {
   );
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+hr {
+  width: 100%;
+  background-color: var(--light-grayish-blue);
+  border: none;
+  height: 1px;
+}
+
 footer {
     position: absolute;
     bottom: 0;
     margin-bottom: 10px;
+}
+
+.box {
+  position: relative;
+  top: 380px;
+  left: -90px;
+  z-index: 2;
+}
+
+.card__container {
+  display: flex;
+  background: white;
+  width: 950px;
+  height: 500px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.image__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image__container img {
+  position: relative;
+  right: 80px;
+
+}
+
+.image__shadow {
+  position: absolute;
+  width: 100%;
+}
+
+.faq__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 0 100px 0 0;
+  top: -20px;
+}
+
+.question {
+  color: var(--very-dark-gray-blue);
 }
 
 .attribution {
@@ -29,4 +94,21 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:375px){
+  
+}
+
+:root {
+  /* Primary */
+  /* Text */
+  --very-dark-des-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  /* Neutral */
+  /* Text */
+  --very-dark-gray-blue: hsl(237, 12%, 33%);
+  --dark-gray-blue: hsl(240, 6%, 50%);
+  /* Dividers */
+  --light-grayish-blue: hsl(240, 5%, 91%);
 }
