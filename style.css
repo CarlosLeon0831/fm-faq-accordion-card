@@ -32,7 +32,7 @@ main {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 p {
@@ -44,6 +44,7 @@ hr {
   background-color: var(--light-grayish-blue);
   border: none;
   height: 1px;
+  margin: 0;
 }
 
 footer {
@@ -101,8 +102,13 @@ footer {
   top: -5px;
 }
 
+
 .question {
   color: var(--very-dark-gray-blue);
+}
+
+.answer {
+  display: none;
 }
 
 .attribution {
