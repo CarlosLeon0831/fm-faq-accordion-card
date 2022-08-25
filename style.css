@@ -22,8 +22,21 @@ body {
   );
 }
 
+main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 100px;
+
+}
+
 h1 {
   font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 hr {
@@ -39,10 +52,11 @@ footer {
     margin-bottom: 10px;
 }
 
+
 .box {
   position: relative;
-  top: 380px;
-  left: -90px;
+  top: 45px;
+  left: 0px;
   z-index: 2;
 }
 
@@ -84,7 +98,7 @@ footer {
   flex-direction: column;
   width: 80%;
   padding: 0 100px 0 0;
-  top: -20px;
+  top: -5px;
 }
 
 .question {
