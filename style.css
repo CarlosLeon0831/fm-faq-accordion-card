@@ -139,6 +139,10 @@ footer {
   color: var(--very-dark-gray-blue);
 }
 
+.question h3:hover {
+  color: var(--soft-red);
+}
+
 .question img {
   align-self: center;
 }
