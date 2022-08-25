@@ -160,6 +160,46 @@ footer {
 }
 
 @media screen and (max-width: 375px) {
+
+  main {
+    right: 45px;
+  }
+  .card__container {
+    width: 290px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    gap: 0.5rem;
+    position: relative;
+    padding: 1rem;
+    height: 530px;
+    justify-content: center;
+  }
+
+  .box {
+    top: -250px;
+    width: 25%;
+  }
+
+  .faq__container {
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .image__container {
+    overflow: visible;
+    width: 100%;
+    top: -80px;
+    left: 40px;
+  }
+
+  .image__container img {
+    width: 250px;
+
+  }
+
+  .questions__accordions {
+    width: 300px;
+  }
 }
 
 :root {
