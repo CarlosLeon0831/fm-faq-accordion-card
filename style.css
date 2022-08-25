@@ -60,7 +60,7 @@ footer {
 
 .active img {
   transform: rotate(180deg);
-  transition: all 0.1s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .active h3 {
@@ -87,6 +87,9 @@ footer {
   width: 950px;
   height: 500px;
   border-radius: 30px;
+  box-shadow: 0px 17px 27px 0px rgba(0,0,0,0.27);
+-webkit-box-shadow: 0px 17px 27px 0px rgba(0,0,0,0.27);
+-moz-box-shadow: 0px 17px 27px 0px rgba(0,0,0,0.27);
 }
 
 .image__container {
