@@ -104,7 +104,15 @@ footer {
 
 
 .question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.3s;
   color: var(--very-dark-gray-blue);
+}
+
+.question img {
+  align-self: center;
 }
 
 .answer {
