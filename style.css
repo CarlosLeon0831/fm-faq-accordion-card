@@ -44,7 +44,6 @@ p {
   font-size: 1rem;
 }
 
-
 footer {
   position: absolute;
   bottom: 0;
@@ -87,9 +86,9 @@ footer {
   width: 950px;
   height: 500px;
   border-radius: 30px;
-  box-shadow: 0px 17px 27px 0px rgba(0,0,0,0.27);
--webkit-box-shadow: 0px 17px 27px 0px rgba(0,0,0,0.27);
--moz-box-shadow: 0px 17px 27px 0px rgba(0,0,0,0.27);
+  box-shadow: 0px 17px 27px 0px rgba(0, 0, 0, 0.27);
+  -webkit-box-shadow: 0px 17px 27px 0px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 0px 17px 27px 0px rgba(0, 0, 0, 0.27);
 }
 
 .image__container {
@@ -163,46 +162,80 @@ footer {
   font-weight: 700;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 750px) {
+  html,
+  body {
+    height: 900px;
+    flex-direction: column;
+  }
 
   main {
-    right: 45px;
+    width: 100%;
+    right: 0px;
   }
+
+  footer {
+    position: relative;
+    bottom: -110px;
+  }
+
   .card__container {
-    width: 290px;
+    width: 300px;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr;
     gap: 0.5rem;
     position: relative;
-    padding: 1rem;
-    height: 530px;
-    justify-content: center;
-  }
-
-  .box {
-    top: -250px;
-    width: 25%;
-  }
-
-  .faq__container {
-    align-items: center;
-    margin-top: 0;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    height: 520px;
   }
 
   .image__container {
+    background-image: url(./images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: center;
+    background-position-y: -10px;
     overflow: visible;
-    width: 100%;
-    top: -80px;
-    left: 40px;
+    height: 100%;
+    
   }
 
   .image__container img {
-    width: 250px;
-
+    width: 85%;
+    top: -70px;
+    left: 0px;
   }
 
+  .image__container-inner {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-size: 73%;
+    background-position: center;
+    top: -129%;
+  }
+
+  .faq__container {
+    width: 100%;
+    margin-top: 10px;
+  }
   .questions__accordions {
-    width: 300px;
+    width: 100%;
+  }
+
+  .question-answer {
+    width: 100%;
+  }
+
+  .faq__title {
+    text-align: center;
+  }
+
+  .box {
+    position: relative;
+    height: 100px;
+    left: -80px;
+    top: 55px;
   }
 }
 
